@@ -1,0 +1,29 @@
+* {
+  font-family: "Source Code Pro", monospace;
+}
+.cuerpo {
+  background-image: linear-gradient(
+    to right,
+    #cdb4db,
+    #ffc8dd,
+    #ffafcc,
+    #bde0fe,
+    #a2d2ff
+  );
+}
+.titulo {
+  text-align: center;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% auto;
+  width: 900px;
+}
+.tarjeta {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
