@@ -4,16 +4,13 @@ const traerPokemon = async () => {
   const respuesta = await fetch(url);
   const pokemons = await respuesta.json();
   console.log(pokemons);
-  const colorTipo = {
-    color: "greenyellow",
-  };
   let color;
-  switch (colorTipo.color) {
-    case "greenyellow":
+  switch (pokemons.types[0].type.name) {
+    case "grass":
       color = "greenyellow";
       break;
     default:
-      console.log("No se encontró el color");
+      alert("No se encontró el color");
       break;
   }
   let contenidoPokemon = "";
