@@ -73,7 +73,7 @@ const traerPokemon = async (num) => {
   }
   let contenidoPokemon = "";
   contenidoPokemon = `<div class="tarjeta" style="background-color:${color}">
-                          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemons.id}.png" alt="${pokemons.name}">
+                          <img src="${pokemons.sprites.front_default}" alt="${pokemons.name}">
                           <p><b>Identificador: </b> ${pokemons.id}</p>
                           <p><b>Nombre:</b> ${pokemons.name}</p>
                           <p><b>Tipo:</b> ${pokemons.types[0].type.name}</p>
